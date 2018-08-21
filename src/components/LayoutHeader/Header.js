@@ -116,7 +116,7 @@ const Header = ({location}: {location: Location}) => (
           <HeaderLink
             isActive={location.pathname.includes('/docs/')}
             title="Docs"
-            to="/docs/hello-world.html"
+            to="/docs/getting-started.html"
           />
           <HeaderLink
             isActive={location.pathname.includes('/tutorial/')}
@@ -162,9 +162,7 @@ const Header = ({location}: {location: Location}) => (
                 borderRadius: 15,
               },
             }}
-            href="https://github.com/facebook/react/releases"
-            target="_blank"
-            rel="noopener">
+            href="/versions">
             v{version}
           </a>
           <a

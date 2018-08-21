@@ -87,7 +87,7 @@ class CustomTextInput extends React.Component {
   }
 
   render() {
-    // tell React that we want the associate the <input> ref
+    // tell React that we want to associate the <input> ref
     // with the `textInput` that we created in the constructor
     return (
       <div>
@@ -251,7 +251,7 @@ class CustomTextInput extends React.Component {
 }
 ```
 
-React will call the `ref` callback with the DOM element when the component mounts, and call it with `null` when it unmounts. `ref` callbacks are invoked before `componentDidMount` or `componentDidUpdate` lifecycle hooks.
+React will call the `ref` callback with the DOM element when the component mounts, and call it with `null` when it unmounts. Refs are guaranteed to be up-to-date before `componentDidMount` or `componentDidUpdate` fires.
 
 You can pass callback refs between components like you can with object refs that were created with `React.createRef()`.
 
